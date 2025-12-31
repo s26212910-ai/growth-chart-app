@@ -1,0 +1,12 @@
+import streamlit as st
+import os
+
+# --- 診斷模式開始 ---
+st.title("🕵️‍♀️ 檔案偵探模式")
+st.write("目前 App 所在的資料夾路徑：", os.getcwd())
+st.write("這個資料夾裡面有哪些檔案：")
+st.write(os.listdir()) # 這行會把所有檔案列印在網頁上
+st.markdown("---")
+# --- 診斷模式結束 ---
+
+# (下方接著原本的程式碼...)
